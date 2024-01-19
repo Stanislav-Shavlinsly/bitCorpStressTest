@@ -1,0 +1,1 @@
+backend = 'https://bitcorp-staking.rocknblock.io/api/v1/'
