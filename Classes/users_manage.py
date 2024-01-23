@@ -37,7 +37,7 @@ class Users:
                 get_response_json = await get_response.json()
                 end_time = time.time()
                 duration = end_time - start_time
-                print("GET", get_response.status, duration)
+                # print("GET", get_response.status, duration)
                 user.message = get_response_json["message"]
 
 
@@ -58,7 +58,7 @@ class Users:
             async with session.post(post_url, json=post_body) as post_response:
                 end_time = time.time()
                 duration = end_time - start_time
-                print("POST", n, post_response.status, duration)
+                # print("POST", n, post_response.status, duration)
 
                 response_text = await post_response.text()
                 json_data = json.loads(response_text)
@@ -73,7 +73,7 @@ def init_users(count):
     users_data = read_users_table()
     for user in users_data:
         i += 1
-        print(i)
+        # print(i)
         user_obj = Users(user)
         all_users.append(user_obj)
         if i == count:

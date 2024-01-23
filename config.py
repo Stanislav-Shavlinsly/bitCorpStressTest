@@ -1,1 +1,1 @@
-backend = 'https://bitcorp-staking.rocknblock.io/api/v1/'
+backend = 'https://api.bitcoinlayer3.io/api/v1/'
